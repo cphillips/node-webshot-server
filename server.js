@@ -34,7 +34,8 @@ function screenGrab(url, callback){
 , shotSize: {
     width: 'all'
   , height: 'all'
-  }
+  },
+  renderDelay:2000
 
 }
   var original = createTmpPng();
