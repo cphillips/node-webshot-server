@@ -29,7 +29,7 @@ function screenGrab(url, callback){
   var options = {
   screenSize: {
     width: 300
-  , height: 400
+  , height: 650
   }
 , shotSize: {
     width: 'all'
