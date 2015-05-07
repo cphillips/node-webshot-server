@@ -26,8 +26,19 @@ function cleanupTmp(file){
 }
 
 function screenGrab(url, callback){
+  var options = {
+  screenSize: {
+    width: 400
+  , height: 650
+  }
+, shotSize: {
+    width: 'all'
+  , height: 'all'
+  }
+
+}
   var original = createTmpPng();
-  webshot(url, original, function(err){
+  webshot(url, original, options, function(err){
     callback(original, function(){
       cleanupTmp(original);
     });
