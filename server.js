@@ -28,8 +28,8 @@ function cleanupTmp(file){
 function screenGrab(url, callback){
   var options = {
   screenSize: {
-    width: 400
-  , height: 650
+    width: 300
+  , height: 400
   }
 , shotSize: {
     width: 'all'
